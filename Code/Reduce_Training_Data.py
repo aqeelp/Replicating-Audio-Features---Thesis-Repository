@@ -3,7 +3,7 @@ import sys
 from scipy.cluster.vq import vq, kmeans
 
 if len(sys.argv) != 2:
-	sys.exit("Usage: python Reduce_Training_Data.py [number of centroids] [filenames of files to reduce...]")
+	sys.exit("Usage: python reduce_training_data.py [number of centroids] [filenames of files to reduce...]")
 
 sample_weights = []
 means = [] # array of arrays

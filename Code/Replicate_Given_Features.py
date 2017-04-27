@@ -15,7 +15,7 @@ ref = 'max'
 if len(sys.argv) == 5: # Optional buffer size parameter
 	buff = int(samps_per_second * float(sys.argv[4]))
 elif len(sys.argv) != 4:
-	sys.exit("Usage: python Replicate_Given_Frequency.py input_file.wav output_file.wav freq_file [buff size (in seconds)]")
+	sys.exit("Usage: python replicate_given_frequency.py input_file.wav output_file.wav freq_file [buff size (in seconds)]")
 
 ideal_rms = 0.15 # Ideal root mean square amplitude of the result.
 stft_samples_per_minute = 4800 # Approximate samples per minute in the STFT with a fundamental frequency of 20hz.

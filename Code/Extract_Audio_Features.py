@@ -10,7 +10,7 @@ buff = samps_per_second * 2 # default: buffer = 2 seconds
 if len(sys.argv) == 3:
 	buff = int(samps_per_second * float(sys.argv[2]))
 elif len(sys.argv) != 2:
-	sys.exit("Usage: python Extract_Audio_Features.py audio_file.wav [optional: buffer size (in seconds)]")
+	sys.exit("Usage: python extract_audio_features.py audio_file.wav [optional: buffer size (in seconds)]")
 
 y, sr = librosa.load(sys.argv[1], sr=samps_per_second)
 fundamental = 20
